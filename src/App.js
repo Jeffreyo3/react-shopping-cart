@@ -27,22 +27,11 @@ function App() {
 					<Navigation cart={cart} />
 
 					{/* Routes */}
-					{/* <Route
-						exact
-						path="/"
-						render={() => (
-							<Products
-								products={products}
-								addItem={addItem}
-							/>
-						)}
-					/> */}
+
 					<Route exact path="/" component={Products} />
 
 					<Route
-						path="/cart"
-						render={() => <ShoppingCart cart={cart} />}
-					/>
+						path="/cart" component={ShoppingCart} />
 				</div>
 			</CartContext.Provider>
 		</ProductContext.Provider>
